@@ -4,7 +4,7 @@ _default:
   @just --list
 
 build:
-    ncc build src/index.ts --minify
+    {{ nmbin }}/ncc build src/index.ts --minify
 
 run: build
     rm -rf .tmp
